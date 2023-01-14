@@ -35,7 +35,7 @@ struct Chats: View {
                 Spacer()
                 
                 ForEach(viewModel.chatrooms) { chatroom in
-                    NavigationLink(destination: chatRoomPremium(chatroom: chatroom)) {
+                    NavigationLink(destination: chatRoom(chatroom: chatroom)) {
                         Text(chatroom.title)
                     }
                 }
